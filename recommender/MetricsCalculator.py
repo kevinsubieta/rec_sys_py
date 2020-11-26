@@ -131,7 +131,10 @@ class MetricsCalculator:
                 total += similarity
                 n += 1
 
-        s = total / n
+        if n != 0:
+            s = total / n
+        else:
+            s = total
         return 1-s
 
     def novelty(top_n_predicted, rankings):
@@ -143,5 +146,10 @@ class MetricsCalculator:
                 rank = rankings[product_id]
                 total += rank
                 n += 1
-        return total / n
+
+        if n!= 0:
+            return total / n
+        else:
+            return total
+
 

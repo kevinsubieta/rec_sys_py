@@ -2,7 +2,7 @@ from evaluators.EvaluatedAlgorithm import EvaluatedAlgorithm
 from evaluators.EvaluationData import EvaluationData
 
 
-class Evaluator:
+class UserEvaluator:
     algorithms = []
 
     def __init__(self, dataset, rankings):
@@ -46,7 +46,9 @@ class Evaluator:
             print("           for a given user. Higher means more diverse.")
             print("Novelty:   Average popularity rank of recommended items. Higher means more novel.")
 
-    def show_top_N_recommendation(self, data_root, test_subject=1, k=10):
+
+
+    def show_user_similarities(self, data_root, test_subject=1, k=10):
         for algorithm in self.algorithms:
             print('Using recommender', algorithm.get_name())
 
@@ -55,19 +57,19 @@ class Evaluator:
             algorithm.get_algorithm().fit(trainset)
 
             print("Computing recommendations...")
-            test_set = self.dataset.get_anti_test_set_for_user(test_subject)
+            test_set = self.dataset.get_anti_test_set_for_simillarities_users(test_subject)
             predictions = algorithm.get_algorithm().test(test_set)
 
             recommendations = []
 
             print("\nBased in the best rating, we recommend:")
-            for user_id, product_id, actual_rating, estimated_rating, _ in predictions:
-                int_product_id = int(product_id)
-                recommendations.append((int_product_id, estimated_rating, user_id))
+            for prediction in predictions:
+                int_user_id = int(prediction.uid)
+                int_user_sim_id = int(prediction.iid)
+                estimated_rating = prediction.est
+                recommendations.append((int_user_sim_id, estimated_rating))
 
             recommendations.sort(key=lambda x: x[1], reverse=True)
 
             for ratings in recommendations[:10]:
-                print(data_root.get_movie_name(ratings[0]), ratings[1])
-
-
+                print(data_root.get_user_name(ratings[0]), ratings[1])

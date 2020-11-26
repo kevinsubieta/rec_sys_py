@@ -36,6 +36,16 @@ class EvaluationData:
     def get_full_anti_test_set(self):
         return self.full_anti_test_set
 
+    def get_anti_test_set_for_simillarities_users(self, test_subject):
+        trainset = self.full_train_set
+        fill = trainset.global_mean
+        anti_testset = []
+        u = trainset.to_inner_uid(str(test_subject))
+        user_items = set([j for (j, _) in trainset.ur[u]])
+        anti_testset += [(trainset.to_raw_uid(u), trainset.to_raw_iid(i), fill) for
+                         i in trainset.all_items()]
+        return anti_testset
+
     def get_anti_test_set_for_user(self, test_subject):
         trainset = self.full_train_set
         fill = trainset.global_mean
