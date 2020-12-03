@@ -44,7 +44,7 @@ class DataUserLoader:
     def load_users_similarities_small(self):
         self.load_users_latest_small()
         users_similarities = self.get_user_similarities()
-        # self.build_file(users_similarities, self.users_ratings_similarity_path)
+        self.build_file(users_similarities, self.users_ratings_similarity_path)
         reader = Reader(line_format='user item rating rating', sep=',', skip_lines=1)
         users_similarities_dataset = Dataset.load_from_file(self.users_ratings_similarity_path, reader=reader)
         users_similarities_rating = self.build_user_similarities_data_list(users_similarities)
@@ -56,7 +56,7 @@ class DataUserLoader:
         # data_frame.drop(0)
         # data_frame.to_csv(path)
         a = np.asarray(array)
-        np.savetxt(path, array, fmt='%i', delimiter=",", header='user_id, other_user_id, rating')
+        np.savetxt(path, array, fmt=['%i','%i','%.2f'], delimiter=",", header='user_id, other_user_id, rating')
 
     def get_cities(self):
         cities = defaultdict(list)
@@ -124,7 +124,7 @@ class DataUserLoader:
                     ages_similarity = self.compute_age_similarity(first_user_id, second_user_id, ages)
 
                     similarity = cities_similarity * 2.0 + \
-                                 gender_similarity * 2.0 + \
+                                 gender_similarity * 1.0 + \
                                  abs(((ages_similarity * 2) / 100) - 2)
 
                     similarities.append((int(first_user_id), int(second_user_id), similarity))
@@ -146,7 +146,7 @@ class DataUserLoader:
 
         sumxx, sumxy, sumyy = 0, 0, 0
 
-        if city_subject_one == 1 and city_subject_one == city_subject_two:
+        if city_subject_one == city_subject_two:
             return 1
         else:
             return 0
@@ -158,7 +158,7 @@ class DataUserLoader:
     def compute_sex_similarity(self, subject_one, subject_two, sex):
         sex_subj_one = sex[subject_one]
         sex_subj_two = sex[subject_two]
-        if sex_subj_one == 1 and sex_subj_one == sex_subj_two:
+        if sex_subj_one == sex_subj_two:
             return 1
         else:
             return 0

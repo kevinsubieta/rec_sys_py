@@ -48,7 +48,7 @@ class UserEvaluator:
 
 
 
-    def show_user_similarities(self, data_root, test_subject=1, k=10):
+    def show_user_similarities(self, data_root, test_subject=2, k=10):
         for algorithm in self.algorithms:
             print('Using recommender', algorithm.get_name())
 
