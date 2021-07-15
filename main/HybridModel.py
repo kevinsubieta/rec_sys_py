@@ -56,8 +56,8 @@ evaluator.add_Algorithm(KNNContennt, 'ContentKNN')
 
 # --------------  TIME FOR Collaborative KNN based in Users ------------
 # User-based KNN
-#UserKNN = KNNBasic(sim_options = {'name': 'cosine', 'user_based': True})
-#evaluator.add_Algorithm(UserKNN, "User KNN")
+UserKNN = KNNBasic(sim_options = {'name': 'cosine', 'user_based': True})
+evaluator.add_Algorithm(UserKNN, "User KNN")
 KnnUser = KNNCollaborative()
 user_evaluator.add_Algorithm(KnnUser, 'UserKNN')
 # ------------------------------------------------------------------------------

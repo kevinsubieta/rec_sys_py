@@ -61,7 +61,7 @@ class DataUserLoader:
     def get_cities(self):
         cities = defaultdict(list)
         cities_ids = {'Santa Cruz': 0, 'Beni': 1, 'Tarija': 2, 'Pando': 3, 'Chuquisaca': 4, 'Oruro': 5,
-                      'Potosí': 6, 'Cochabamba': 7, 'La Paz': 8}
+                      'Potosi': 6, 'Cochabamba': 7, 'La Paz': 8}
         with open(self.userPath, newline='', encoding=None) as csvfile:
             user_reader = csv.reader(csvfile)
             next(user_reader)
