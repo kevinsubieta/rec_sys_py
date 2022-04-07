@@ -10,9 +10,9 @@ from surprise import Reader
 class DataLoader:
 
     buysPath = '../data/buys.csv'
-    productsPath = '../data/products.csv'
-    ratingPath = '../data/ratings.csv'
-    userPath = '../data/users.csv'
+    productsPath = '../data/products2.csv'
+    ratingPath = '../data/ratings2.csv'
+    userPath = '../data/users2.csv'
 
     productId_to_name = {}
     name_to_product_id = {}
@@ -28,7 +28,7 @@ class DataLoader:
             productReader = csv.reader(csvfile)
             next(productReader)  # Skip header line
             for row in productReader:
-                product_id = int(row[0])
+                product_id = str(row[0])
                 product_name = row[1]
                 self.productId_to_name[product_id] = product_name
                 self.name_to_product_id[product_name] = product_id
@@ -43,7 +43,7 @@ class DataLoader:
             product_reader = csv.reader(csvfile)
             next(product_reader)
             for row in product_reader:
-                product_id = int(row[0])
+                product_id = str(row[0])
                 categories_list = row[3].split('|')
                 categories_id_list = []
                 for cat in categories_list:
@@ -71,9 +71,9 @@ class DataLoader:
             rating_reader = csv.reader(csvfile)
             next(rating_reader)
             for row in rating_reader:
-                user_id = int(row[0])
+                user_id = str(row[0])
                 if user_id_to_search == user_id:
-                    product_id = int(row[1])
+                    product_id = str(row[1])
                     rating = float(row[2])
                     user_ratings.append((product_id, rating))
         return user_ratings
@@ -85,7 +85,7 @@ class DataLoader:
             rating_reader = csv.reader(csvfile)
             next(rating_reader)
             for row in rating_reader:
-                product_id = int(row[1])
+                product_id = str(row[1])
                 ratings[product_id] += 1
         rank = 1
         for product_id, ratingCount in sorted(ratings.items(), key=lambda x: x[1], reverse=True):

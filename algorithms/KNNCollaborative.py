@@ -30,8 +30,8 @@ class KNNCollaborative(AlgoBase):
             if thisRating % 100 == 0:
                 print(thisRating, " of ", self.trainset.n_items)
             for otherRating in range(thisRating + 1, self.trainset.n_items):
-                first_user_id = int(self.trainset.to_raw_iid(thisRating))
-                second_user_id = int(self.trainset.to_raw_iid(otherRating))
+                first_user_id = self.trainset.to_raw_iid(thisRating)
+                second_user_id = self.trainset.to_raw_iid(otherRating)
 
                 cities_similarity = self.compute_city_similarity(first_user_id, second_user_id, cities)
                 gender_similarity = self.compute_sex_similarity(first_user_id, second_user_id, gender)
@@ -44,7 +44,6 @@ class KNNCollaborative(AlgoBase):
 
         print("...done.")
         return self
-
 
     def estimate(self, u, i):
         if not (self.trainset.knows_user(u) and self.trainset.knows_item(i)):
@@ -72,7 +71,6 @@ class KNNCollaborative(AlgoBase):
 
         return predictedRating
 
-
     def compute_city_similarity(self, subject_one, subject_two, cities):
         city_subject_one = cities[subject_one]
         city_subject_two = cities[subject_two]
@@ -96,3 +94,7 @@ class KNNCollaborative(AlgoBase):
             return 1
         else:
             return 0
+
+
+
+

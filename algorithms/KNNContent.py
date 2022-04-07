@@ -30,8 +30,8 @@ class KNN(AlgoBase):
             if first_rating % 100 == 0:
                 print(first_rating, " of ", self.trainset.n_items)
             for second_rating in range(first_rating + 1, self.trainset.n_items):
-                first_product_id = int(self.trainset.to_raw_iid(first_rating))
-                second_product_id = int(self.trainset.to_raw_iid(second_rating))
+                first_product_id = self.trainset.to_raw_iid(first_rating)
+                second_product_id = self.trainset.to_raw_iid(second_rating)
                 categories_similarity = self.compute_categories_similarity(first_product_id, second_product_id, categories)
 
                 self.similarities[first_rating, second_rating] = categories_similarity
@@ -44,14 +44,17 @@ class KNN(AlgoBase):
         category_product_two = categories[product_two]
 
         sumxx, sumxy, sumyy = 0, 0, 0
-        for i in range(len(category_product_one)):
-            x = category_product_one[i]
-            y = category_product_two[i]
-            sumxx += x * x
-            sumyy += y * y
-            sumxy += x * y
-
-        return sumxy / math.sqrt(sumxx*sumyy)
+        try:
+            for i in range(len(category_product_one)):
+                x = category_product_one[i]
+                y = category_product_two[i]
+                sumxx += x * x
+                sumyy += y * y
+                sumxy += x * y
+            return sumxy / math.sqrt(sumxx * sumyy)
+        except NameError:
+            print(NameError)
+            return 0
 
     def estimate(self, u, i):
         if not self.trainset.knows_user(u) and self.trainset.knows_item(i):

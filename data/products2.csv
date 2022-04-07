@@ -1,0 +1,90 @@
+productId,name,brand,categories
+5ec6e908479b6abdda3e7cfd, Smart TV HD este es el nombre completo del producto que se puede llenar este es el nombre completo del producto que se puede llenar este es el nombre, LG,hogar|electrodomesticos|interiores
+5ec6ea8b479b6abdda3e7cfe,Aire acondicionado,Samsung,hogar|electrodomesticos|interiores
+5f3f497596e1d18db35aa3e4, Pulsera Inteligente,Samsung,electrodomesticos|gadgets
+5f860c0f5a4df270a1020c45, Polera de Algodón, Mitsuba,Ropa|verano
+5f8633f2bbe5fd5988db208c, Perfume Carolina Herrera, Carolina Herrera,cosmeticos|perfumes|moda
+5fe3bef276180e1c714a32e9, Iphone,Apple,smartphones
+60faf001a42e99cf54b8b100, Refrigerador Kernig semi seco 153Lts 2 puertas inox, Kernig,hogar|electrodomesticos|interiores
+60faf672a42e99cf54b8b101, Refrigerador Kernig frio seco de 396 Lts French Door Inox, Kernig,hogar|electrodomesticos|interiores
+60fc7010a42e99cf54b8b102, Teléfono Celular Xiaomi Poco M3 64GB Azul,Xiaomi,smartphones
+60fc709ea42e99cf54b8b103, Teléfono Celular Samsung Galaxy S21+ Negro,Samsung,smartphones
+60fc7185a42e99cf54b8b104, Teléfono Celular Xiaomi MI 10TLite 128GB Gris, Xiaomi,smartphones
+60fc724fa42e99cf54b8b105, Teléfono Celular Iphone 12 Pro 256GB Azul, Apple,smartphones
+60fc7bcca42e99cf54b8b106, Teléfono Celular Iphone 12 Pro Max 128GB Grafito, Apple,smartphones
+60fc7cdfa42e99cf54b8b107, Televisor 32" TCL Android TV Serie S60A, TCL,hogar|interiores|electronicos
+60fc7d58a42e99cf54b8b108, Televisor Sony 85" android tv serie X805 UHD,Sony,hogar|interiores|electronicos
+60fc8039a42e99cf54b8b109, Televisor LG 43" UHD 4K Smart Tv Web Os, LG,hogar|interiores|electronicos
+60fc8090a42e99cf54b8b10a, Sintonizador Digital, S/N,electronicos|herramientas
+60fed8c5a42e99cf54b8b10b, Televisor Sony 55" smart tv serie X725f 4k, Sony,hogar|interiores|electronicos
+60fedaf5a42e99cf54b8b10c, Computadora Dell de 15.6" Intel Core i5 11va Gen. 8GB Ram 256 SSD, Dell,electronicos|trabajo|computadoras
+60fedbaca42e99cf54b8b10d, Computadora portátil Dell 15.6" AMD Ryzen 7 3700U, Dell,electronicos|trabajo|computadoras
+60fedc2da42e99cf54b8b10e, Computadora Lenovo 14" ADM RYZEN 5 4500u Windows 10 Home, Lenovo, electronicos|trabajo|computadoras
+60fedca3a42e99cf54b8b10f, Computadora portátil Huawei de 13.8" Intel Core i5 10ma Generación,Huawei,electronicos|trabajo|computadoras
+60fedd8aa42e99cf54b8b110, Computadora HP 14" 240 G7 Intel Core i3 1005G1,HP,electronicos|trabajo|computadoras
+60feded2a42e99cf54b8b111,Cuerda de Salto PVC Rojo, S/N,deporte|salud|aire_libre
+60fedf6ea42e99cf54b8b112,Rodillo de espuma 33x14 cm Rojo,S/N,deporte|salud|aire_libre|yoga
+60fedf6ea42e99cf54b8b113,Rodillo de espuma 33x14 cm Negro,S/N,deporte|salud|aire_libre|yoga
+60fedf6ea42e99cf54b8b114,Rodillo de espuma 33x14 cm Azul,S/N,deporte|salud|aire_libre|yoga
+60fee05fa42e99cf54b8b115,Colchoneta abdominal - Wolffit, Wolffit, deporte|salud|aire_libre|yoga
+6102d1dcdf1f35482d00c7ea,Monitor 27"" HP LED, HP, electronicos|trabajo|monitores
+6102d242df1f35482d00c7eb,Monitor curvo 24 Samsung Full HD, Samsung,electronicos|trabajo|monitores
+6102d289df1f35482d00c7ec,Proyector Epson PowerLite X41+ 3,600 ANSI-Lumens, Epson,electronicos|trabajo|proyectores
+6102d2d8df1f35482d00c7ed,Proyector Epson PowerLite S41+, Epson,electronicos|trabajo|proyectores
+6102d31fdf1f35482d00c7ee,Monitor plano 24 Samsung Full HD, Samsung,electronicos|trabajo|monitores
+61036902df1f35482d00c7ef,Bicicleta Venzo 6000 26 Rojo, Venzo,deporte|salud|aire_libre|bicicletas|ciclismo
+61036903df1f35482d00c7f0,Bicicleta Venzo 6000 26 Azul, Venzo,deporte|salud|aire_libre|bicicletas|ciclismo
+61036903df1f35482d00c7f1,Bicicleta Venzo 6000 26 Negro, Venzo,deporte|salud|aire_libre|bicicletas|ciclismo
+61036903df1f35482d00c7f2,Bicicleta Venzo 6000 26 Verde, Venzo,deporte|salud|aire_libre|bicicletas|ciclismo
+610369c0df1f35482d00c7f3,Portabicicletas Trasero para 3 Bicicletas,S/N,deporte|salud|aire_libre|bicicletas|accesorios
+61036a21df1f35482d00c7f4,Rodillo de entrenamiento magnetico – rueda trasera celeste,S/N,deporte|salud|aire_libre|yoga
+61036a7cdf1f35482d00c7f5,Aspiradora TH-1870 Thomas, Thomas,hogar|interiores|electronicos|limpieza
+61036ad9df1f35482d00c7f6,Hervidor Black & Decker de plástico, Black & Decker,hogar|interiores|electronicos|cafeteria
+61036c36df1f35482d00c7f7,Cupcake maker Blanik, Blanik, hogar|interiores|electronicos|cafeteria|cocina
+61036d4cdf1f35482d00c7f8,Mochila para laptop de 15.4 color azul Klip Xtreme,Klip,trabajo|computadoras|accesorios
+61036db3df1f35482d00c7f9,Mochila para laptop de 16 color naranja Klip Xtreme, Klip,trabajo|computadoras|accesorios
+61036e40df1f35482d00c7fa,Motocicleta eléctrica deportiva Tongbao Z-M6-020 Color Blanco y Negro, Tongbao,trabajo|trasporte|motores
+61036e99df1f35482d00c7fb,Scooter simple eléctrico Youlidi TDT503Z 14 Color Rojo y Negro, Youlidi,trabajo|trasporte|motores
+61036f20df1f35482d00c7fc,Scooter mediana eléctrico Nice AOF Color Rojo y Negro,AOF,trabajo|trasporte|motores
+61036f7ddf1f35482d00c7fd,Impresora de tinta continua Canon G-2110, Canon,trabajo|impresoras|fotocopiadoras|scanners
+61036fbfdf1f35482d00c7fe,Impresora de tinta continua Canon G-3110, Canon,trabajo|impresoras|fotocopiadoras|scanners
+61036ff7df1f35482d00c7ff,Impresora de tinta continua Canon G1100, Canon,trabajo|impresoras|fotocopiadoras|scanners
+61037284df1f35482d00c800,Disco duro externo portatil de 1TB, Seagate,trabajo|perifericos|accesorios
+61037284df1f35482d00c801,Disco duro externo portatil de 1TB, Seagate,trabajo|perifericos|accesorios
+61037284df1f35482d00c803,Disco duro externo portatil de 1TB, Seagate,trabajo|perifericos|accesorios
+61037284df1f35482d00c802,Disco duro externo portatil de 1TB, Seagate,trabajo|perifericos|accesorios
+6103740adf1f35482d00c804,Motocicleta Boxer Alloy UG 150 CC Negro con Gris,Bajaj,motores|trabajo
+61037454df1f35482d00c805,Motocicleta Boxer Alloy UG 150 CC Blanco, Bajaj,motores|trabajo
+61040df3d49035e51642be52,Ventilador de pie Oster de 40cm, Oster,hogar|interiores|electronicos|ventiladores
+61040eabd49035e51642be53,Ventilador de piso Ufesa 70w de potencia, Ufesa,hogar|interiores|electronicos|ventiladores
+61040ff6d49035e51642be54,Ventilador de piso Ufesa 45w de potencia, Ufesa,hogar|interiores|electronicos|ventiladores
+61041062d49035e51642be55,Radiador eléctrico Ufesa 2500w de potencia, Ufesa,hogar|interiores|electronicos|radiadores
+610410b6d49035e51642be56,Calefactor plano Ufesa 1800w de potencia, Ufesa,hogar|interiores|electronicos|calefones
+610412d7d49035e51642be57,Horno eléctrico empotrable Bosch de 71 Litros inox,Bosch,hogar|interiores|cocina
+61041313d49035e51642be58,Horno eléctrico empotrable Bosch dfe 71 Litros con vapor,Bosch,hogar|interiores|cocina
+6104135bd49035e51642be59,Horno electrico con microondas Bosch de 45 Lts, Bosch,hogar|interiores|cocina
+610413bbd49035e51642be5a,Horno eléctrico Tramontina F7 de 71 Lts vidrio negro,Tramontina,hogar|interiores|cocina
+61041438d49035e51642be5b,Lavavajillas Bosch 14 cubiertos inox, Bosch,hogar|interiores|lavadoras
+610414d3d49035e51642be5c,Lavavajillas Whirlpool 14 cubiertos blanco, Whirlpool,hogar|interiores|lavadoras
+610415d7d49035e51642be5d,Hidrolavadora K3 full control, Karcher,lavadoras|hidrolavadoras|exteriores|vehículos
+61041624d49035e51642be5e,Hidrolavadora Energy 1200W, Karcher,lavadoras|hidrolavadoras|exteriores|vehículos
+61041674d49035e51642be5f,Hidrolavadora Profesional Gladiator Pro 1200W, Gladiator,lavadoras|hidrolavadoras|exteriores|vehículos
+6104170fd49035e51642be60,Escritorio Corimexo Giuseppe melamínico café, Corimexo,trabajo|muebles|escritorio
+61041758d49035e51642be61,Silla giratoria Corimexo Time Presidente, Corimexo,trabajo|muebles|silla
+610417bed49035e51642be62,Silla giratoria Corimexo Pistacho, Corimexo,trabajo|muebles|silla
+6104180cd49035e51642be63,Microondas Whirlpool de 30 Lts negro panel LCD,Whirlpool,hogar|interiores|electronicos|cocina|microondas
+6104184fd49035e51642be64,Microondas Whirlpool de 20 Lts blanco, Whirlpool,hogar|interiores|electronicos|cocina|microondas
+610418a3d49035e51642be65,Microondas grill Whirlpool de 38 Lts plata, Whirlpool,hogar|interiores|electronicos|cocina|microondas
+610419e0d49035e51642be66,Frigobar Retro Memo frio seco - 37 lts rojo, Retro Memo,hogar|interiores|electronicos|frigobar
+61041a26d49035e51642be67,Frigobar Zahe 76lts 1 puerta Blanco, Zahe,hogar|interiores|electronicos|frigobar
+61041a8ad49035e51642be68,Frigobar Kernig 87 Lts de 2 puertas Inox, Kernig,hogar|interiores|electronicos|frigobar
+61041cce8e24e60892fbb07e,Cervecera Consul Frio seco - 82 Lts Rojo, Consul,hogar|interiores|electronicos|cervecera
+61041d2e8e24e60892fbb07f,Cava Electrolux 34 botellas de 1 puerta, Electrolux,hogar|interiores|cocina|cava
+61041eb98e24e60892fbb080,Caldera Eléctrica Oster® metálica, Oster,hogar|interiores|cocina|cafeteria
+61041f1c8e24e60892fbb081,Plancha Oster® a vapor con suela antiadherente 1200W de potencia, Oster,hogar|interiores|cocina|cafeteria
+61041f858e24e60892fbb082,Calefón a gas 5 Lts Tiro Natural GLP, Splendid,hogar|interiores|duchas|calefones
+61041fca8e24e60892fbb083,Lavadora secadora Whirlpool 10.5Kg/7Kg, Whirlpool,hogar|interiores|secadora|lavadora
+6104212d8e24e60892fbb084,Lavadora Whirlpool carga superior de 10 Kg blanca,Whirlpool, hogar|interiores|lavadora
+610422648e24e60892fbb085,Secadora a gas Whirlpool Americana de 15Kg blanca,Whirlpool, hogar|interiores|secadora
+610422ed8e24e60892fbb086,Hervidor Black & Decker de plástico, Black & Decker,hogar|interiores|cocina|cafeteria
+610423638e24e60892fbb087,Tostadora Bosch plastica roja, Bosch,hogar|interiores|cocina|cafeteria|tostadora

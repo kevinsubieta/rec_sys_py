@@ -48,7 +48,7 @@ class UserEvaluator:
 
 
 
-    def show_user_similarities(self, data_root, test_subject=2, k=10):
+    def show_user_similarities(self, data_root, test_subject="610963a16add0e1408837c7d", k=10):
         for algorithm in self.algorithms:
             print('Using recommender', algorithm.get_name())
 
@@ -62,10 +62,10 @@ class UserEvaluator:
 
             recommendations = []
 
-            print("\nBased in the best rating, we recommend:")
+            print("\nBasado en la puntuación, se recomienda:")
             for prediction in predictions:
-                int_user_id = int(prediction.uid)
-                int_user_sim_id = int(prediction.iid)
+                int_user_id = prediction.uid
+                int_user_sim_id = prediction.iid
                 estimated_rating = prediction.est
                 recommendations.append((int_user_sim_id, estimated_rating))
 

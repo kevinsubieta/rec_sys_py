@@ -16,11 +16,11 @@ class MetricsCalculator:
 
         for user_id, movie_id, actual_rating, estimated_rating, _ in predictions:
             if(estimated_rating >= minimium_rating):
-                top_n[int(user_id)].append((int(movie_id), estimated_rating))
+                top_n[user_id].append((movie_id, estimated_rating))
 
         for user_id, ratings in top_n.items():
             ratings.sort(key=lambda x: x[1], reverse=True)
-            top_n[int(user_id)] = ratings[:n]
+            top_n[user_id] = ratings[:n]
 
         return top_n
 
@@ -32,8 +32,8 @@ class MetricsCalculator:
             user_id = left_out[0]
             left_out_product_id = left_out[1]
             hit = False
-            for product_id, predicted_rating in top_n_predicted[int(user_id)]:
-                if (int(left_out_product_id) == int(product_id)):
+            for product_id, predicted_rating in top_n_predicted[user_id]:
+                if (left_out_product_id == product_id):
                     hit = True
                     break
             if (hit) :
@@ -50,8 +50,8 @@ class MetricsCalculator:
         for user_id, left_out_product_id, actual_rating, estimated_rating, _ in left_out_predictions:
             if actual_rating >= rating_cut_off:
                 hit = False
-                for product_id, predicted_rating in top_n_predicted[int(user_id)]:
-                    if int(left_out_product_id) == product_id:
+                for product_id, predicted_rating in top_n_predicted[user_id]:
+                    if left_out_product_id == product_id:
                         hit = True
                         break
                 if hit:
@@ -69,8 +69,8 @@ class MetricsCalculator:
         for user_id, left_out_product_id, actual_rating, estimated_rating, _ in left_out_predictions:
             # Is it in the predicted top N for this user?
             hit = False
-            for product_id, predictedRating in top_n_predicted[int(user_id)]:
-                if int(left_out_product_id) == product_id:
+            for product_id, predictedRating in top_n_predicted[user_id]:
+                if left_out_product_id == product_id:
                     hit = True
                     break
             if (hit) :
@@ -90,9 +90,9 @@ class MetricsCalculator:
         for user_id, left_out_product_id, actual_rating, estimated_rating, _ in left_out_predictions:
             hitRank = 0
             rank = 0
-            for product_id, predictedRating in top_n_predicted[int(user_id)]:
+            for product_id, predictedRating in top_n_predicted[user_id]:
                 rank = rank + 1
-                if (int(left_out_product_id) == product_id):
+                if (left_out_product_id == product_id):
                     hitRank = rank
                     break
             if (hitRank > 0) :

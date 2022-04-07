@@ -46,7 +46,7 @@ class Evaluator:
             print("           for a given user. Higher means more diverse.")
             print("Novelty:   Average popularity rank of recommended items. Higher means more novel.")
 
-    def show_top_N_recommendation(self, data_root, test_subject=1, k=10):
+    def show_top_N_recommendation(self, data_root, test_subject="610963a16add0e1408837c7d", k=10):
         for algorithm in self.algorithms:
             print('Using recommender', algorithm.get_name())
 
@@ -60,9 +60,9 @@ class Evaluator:
 
             recommendations = []
 
-            print("\nBased in the best rating, we recommend:")
+            print("\nBasado en la puntuación, se recomienda:")
             for user_id, product_id, actual_rating, estimated_rating, _ in predictions:
-                int_product_id = int(product_id)
+                int_product_id = product_id
                 recommendations.append((int_product_id, estimated_rating, user_id))
 
             recommendations.sort(key=lambda x: x[1], reverse=True)
